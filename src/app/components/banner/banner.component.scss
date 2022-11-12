@@ -1,0 +1,45 @@
+@import "../../../style/_mixins.scss";
+
+.banner-container {
+  width: 96%;
+  margin: 0 auto;
+  height: 70vh;
+  background: url('../../../assets/Images/banner.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  font-family: 'Recoleta', sans-serif;
+
+  @include respond(tab){
+    height: 50vh;
+  }
+
+  @include respond(phone){
+    height: 40vh;
+    background-size: 100% 100%;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    background: none;
+
+    @include respond(tab){
+      font-size: 1.5rem;
+    }
+
+    @include respond(phone){
+      top: 30%;
+      font-size: 1rem;
+    }
+
+  }
+
+  .filter-wrapper {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+  }
+}

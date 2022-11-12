@@ -1,0 +1,29 @@
+<div class="card-container">
+  <div class="inner-card-top">
+    <div class="image-wrapper">
+      <img [src]="cards.imageUrl" alt="image"/>
+    </div>
+    <div class="title-wrapper">
+      <div>{{cards.name}}</div>
+      <div>{{cards.place}}</div>
+      <div>4.8<span *ngFor="let stars of cards.rating"><i class="fa-solid fa-star"></i></span></div>
+    </div>
+    <div class="like-wrapper">
+      <img src="../../../assets/Images/heart.png"/>
+    </div>
+  </div>
+  <div class="inner-card-middle">
+    <div>{{cards.title}}</div>
+    <div>${{cards.price}} / hour</div>
+  </div>
+  <div class="horizontal-line"></div>
+  <div class="inner-card-bottom">
+    <div>
+      <div>{{cards.date}}</div>
+      <div>Show all times</div>
+    </div>
+    <div class="card-dates">
+      <div class="inner-cards-date" *ngFor="let time of cards.time">{{time}}</div>
+    </div>
+  </div>
+</div>

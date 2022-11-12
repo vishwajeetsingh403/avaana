@@ -1,0 +1,92 @@
+@import "../../../style/_mixins.scss";
+
+.details-container {
+  background: #095D59;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+
+  @include respond(tab){
+    height: 100vh;
+  }
+
+  .details-content {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Recoleta', sans-serif;
+    div {
+      &:first-child {
+        font-size: 2.5rem;
+
+        @include respond(phone){
+          font-size: 1.5rem;
+        }
+      }
+      &:last-child {
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-family: 'Avenir', sans-serif;
+        @include respond(phone){
+          font-size: .5rem;
+        }
+        span {
+          color: #00BD71;
+          img{
+            width: 10px;
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    overflow-x: scroll;
+    div{
+      margin-right: 1rem;
+    }
+    @include respond(tab){
+      width: 90%;
+      justify-content: space-between;
+    }
+
+    div {
+      @include respond(tab){
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .details-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      height: 40px;
+      background: #FD896B;
+      border-radius: 23px;
+      cursor: pointer;
+      font-size: 12px;
+      font-family: 'Avenir', sans-serif;
+      color: #ffffff;
+
+      @include respond(tab){
+        width: 40%;
+      }
+
+      @include respond(phone){
+        width: 60%;
+      }
+
+      &:hover{
+        background: #ff7765;
+      }
+  }
+}

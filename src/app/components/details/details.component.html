@@ -1,0 +1,12 @@
+<div class="details-container">
+  <div class="details-content">
+    <div>Discover wellbeing services near you</div>
+    <div>Displaying nearby wellbeing for <span>Hawthorn</span><span><img src="../../../assets/Images/carrot.png"/></span></div>
+  </div>
+  <div class="cards-wrapper">
+    <div *ngFor="let card of cards">
+      <app-card [cards]="card"></app-card>
+    </div>
+  </div>
+  <div class="details-button">FIND MORE WELLBEING NEARBY</div>
+</div>
