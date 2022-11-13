@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  public ICON : string = "https://avaana.com.au/assets/params/images/svg/footer/avaana-logo.svg";
-  public ICONS: object = {
+  public ICONS: any = {
     LOGO: "https://avaana.com.au/assets/params/images/svg/footer/avaana-logo.svg",
     SEARCH : "https://avaana.com.au/assets/params/images/icons/search-interface-symbol.png",
     USERS: "../../assets/Images/user.png"
